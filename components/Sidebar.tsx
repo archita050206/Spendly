@@ -25,7 +25,7 @@ export default function Sidebar() {
   const navItems = [
     { name: "Overview", href: "/", icon: LayoutGrid, activeMatch: (p: string) => p === "/" || p === "/home" },
     { name: "Transactions", href: "/transactions", icon: CreditCard, activeMatch: (p: string) => p.startsWith("/transactions") },
-    { name: "Budgets", href: "#budgets", icon: PieChart, activeMatch: (p: string) => p.startsWith("/budgets") },
+    { name: "Budgets", href: "/budgets", icon: PieChart, activeMatch: (p: string) => p.startsWith("/budgets") || p.startsWith("/budgest") },
     { name: "Analytics", href: "#analytics", icon: BarChart3, activeMatch: (p: string) => p.startsWith("/analytics") },
     { name: "Recurring", href: "#recurring", icon: CalendarClock, activeMatch: (p: string) => p.startsWith("/recurring") },
     { name: "Settings", href: "#settings", icon: SlidersHorizontal, activeMatch: (p: string) => p.startsWith("/settings") },
